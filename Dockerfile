@@ -12,7 +12,7 @@ RUN apt-get update && \
     touch /etc/krb5kdc/kadm5.acl && \
     ln -s /etc/krb5kdc/kdc.conf /opt/kerberos/conf/kdc.conf && \
     ln -s /etc/krb5.conf /opt/kerberos/conf/krb5.conf && \
-    lv -s /etc/krb5kdc/kadm5.acl && \
+    ln -s /etc/krb5kdc/kadm5.acl /opt/kerberos/conf/kadm5.acl
 
 WORKDIR /opt/kerberos
 
